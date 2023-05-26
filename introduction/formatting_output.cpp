@@ -90,28 +90,38 @@ void print_setprecision()
         {
         case 1:
         {
+            cout << "\nios ::fixed has been set!!!\n";
+
             cout.setf(ios ::fixed); // Prints the required number of decimal digits without losing precision
         }
         break;
         case 2:
         {
+            cout << "\nios ::uppercase has been set!!!\n";
+
             // ! To be used in combination with the scientific flag
             cout.setf(ios ::uppercase); // Prints the scientific notation in uppercase
         }
         break;
         case 3:
         {
+            cout << "\nios ::showpos has been set!!!\n";
+
             cout.setf(ios ::showpos); // Prints the plus '+' sign in front of positive numbers
         }
         break;
         case 4:
         {
+            cout << "\nios ::scientific has been set!!!\n";
+
             // ! Not to be used in combination with the fixed flag
             cout.setf(ios ::scientific); // Prints the decimal numbers in scientific notation
         }
         break;
         case 5:
         {
+            cout << "\nios ::showpoint has been set!!!\n";
+
             // * May be used with integer values
             cout.setf(ios ::showpoint); // Prints the decimal point and trailing zeroes
         }
